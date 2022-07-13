@@ -12,12 +12,12 @@ const Admin = ({isAuthenticated,onLogout})=>{
         <Container>
             <p></p>
         <h1>
-        Área de Administração
+        Administration Zone
         </h1>
-            <h2>Bem Vindo {auth.user?.email}</h2>
+            <h2>Welcome {auth.user?.email}</h2>
             <p>unique id: {auth.user?.uid}</p>
-            <h4>JSON de autenticação do firebase:</h4> <p>{JSON.stringify(isAuthenticated.response)}</p>
-            <h3>Seção demonstrativa, apenas mostrando  a criação do token presente no usuário que consta no firebase. Para voltar ao menu anterior mantendo o login, utilizar o botao "Home", para deslogar usar o botão "Logout"</h3>
+            <h4>fireabse authentication json:</h4> <p>{JSON.stringify(isAuthenticated.response)}</p>
+            <h3>Demo section, just showing the creation of the token for a user in firebase. To return to the previous menu while maintaining the login information, use the "Home" button. To log out, use the button"Logout"</h3>
             <ButtonAdmin
                 color="danger"
             onClick={()=>{onLogout()}}
